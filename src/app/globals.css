@@ -19,3 +19,250 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.style {
+  background-color: rgb(24, 22, 22);
+  /* border: 5px solid red; */
+}
+
+.broder {
+  border: 20px solid blue;
+}
+
+.shadow {
+  box-shadow: 5px 4px 6px -1px rgba(223, 211, 211, 0.836);
+}
+
+.animated-button {
+  padding: 7px 30px;
+  margin-top: 20px;
+  border: 2px solid whitesmoke;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.animated-button:hover {
+  background-color: rgb(199, 194, 194);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.animated-button:active {
+  transform: scale(0.95);
+}
+
+/* ================================================================================ */
+
+.animated-button1 {
+  padding: 10px 50px;
+  margin-top: 20px;
+  border: 2px solid rgba(197, 190, 190, 0.815);
+  color: rgb(20, 19, 19);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.animated-button1:hover {
+  background-color: rgb(199, 194, 194);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.animated-button1:active {
+  transform: scale(0.95);
+}
+
+/* ================================================================================== */
+
+.product-card {
+  background-color: #f3f3f3;
+  cursor: pointer;
+  height: 150px;
+  margin: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================= */
+
+.animated-link {
+  display: inline-block;
+  position: relative;
+  padding: 0.5em 1em;
+  color: #0e1214;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.animated-link::before,
+.animated-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #9aa1a7;
+  transition: transform 0.3s ease;
+}
+.animated-link::before {
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.animated-link::after {
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.animated-link:hover::before,
+.animated-link:hover::after {
+  transform: scaleX(1);
+}
+.animated-link:hover {
+  color: #2c3e50;
+  transform: scale(1.05);
+}
+.animated-link:hover::after {
+  background-color: #2c3e50;
+}
+
+
+
+/* ===========================================================
+ */
+
+ 
+.animated-button2 {
+  padding: 10px 50px;
+  margin-top: 20px;
+  border: 2px solid rgba(17, 16, 16, 0.815);
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.animated-button2:hover {
+  background-color: rgb(199, 194, 194);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.animated-button2:active {
+  transform: scale(0.95);
+}
+
+
+/* ===================================== */
+#highlighted {
+  color: #fff; /* Changes the text color to red */
+  font-weight: bold; /* Makes the text bold */
+  font-size: 2rem; /* Example: Change font size */
+}
+
+
+/* =========================================================================================== */
+
+.awesome-button {
+  display: inline-block;
+  padding: 10px 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color:#2c2c2c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.awesome-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.awesome-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.awesome-button:hover {
+  background-color: #7f8382;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.awesome-button:active {
+  transform: scale(0.95);
+}
+
+/* ==================================// */
+
+
+.awesome-button2 {
+  display: inline-block;
+  padding: 20px 70px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  background-color:#fff9f9ee;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.awesome-button2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.awesome-button2:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.awesome-button2:hover {
+  background-color: #7f8382;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.awesome-button2:active {
+  transform: scale(0.95);
+}
